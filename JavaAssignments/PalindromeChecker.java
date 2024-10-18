@@ -15,8 +15,8 @@ public class PalindromeChecker {
         int number = scanner.nextInt();
         
         // Extract digits
-        int firstDigit = number / 100;
-        int lastDigit = number % 10;
+        int firstChar = number / 100;
+        int lastChar = number % 10;
         
         // Check if it's a palindrome
         boolean isPalindrome = (firstDigit == lastDigit);
@@ -28,6 +28,5 @@ public class PalindromeChecker {
             System.out.println(number + " is not a palindrome");
         }
         
-        scanner.close();
-    }
+          }
 }
