@@ -19,7 +19,7 @@ public class PalindromeChecker {
         int lastChar = number % 10;
         
         // Check if it's a palindrome
-        boolean isPalindrome = (firstDigit == lastDigit);
+        boolean isPalindrome = (firstChar == lastChar);
         
         // Output result
         if (isPalindrome) {
