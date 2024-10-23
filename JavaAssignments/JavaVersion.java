@@ -17,10 +17,6 @@ public class JavaVersion {
 	System.out.println("Java Vendor :" +javaVendor);
 	System.out.println("Java Class Path: " +javaClassPath);
 	System.out.println("Java Vendor Url : " +javaVendorUrl);
-
-	
-
-
 	
 
 	}
