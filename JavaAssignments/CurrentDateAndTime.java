@@ -7,12 +7,7 @@ public class CurrentDateAndTime {
 	Date systemDateAndTime = new Date();
 	
 
-	
 	System.out.println("Current Data Time : " +systemDateAndTime);
-	
-
-	
-
 
 	
 
