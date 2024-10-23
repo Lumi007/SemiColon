@@ -1,4 +1,4 @@
-principalAmount = float(input("Enter the principal amount: "))
+principalAmount = float(input("Enter the principal amount in Naira: "))
 annualInterestRate = float(input("Enter the annual interest rate: "))
 durationInYears = float(input("Enter the duration in years: "))
 
@@ -7,4 +7,4 @@ durationInMonths = durationInYears * 12
 
 monthlyPayment = principalAmount * ((monthlyInterestRate * ((1 + monthlyInterestRate) ** durationInMonths)) / (((1 + monthlyInterestRate) ** durationInMonths) - 1))
 
-print(f"Your monthly payment is: {monthlyPayment:.2f}")
+print(f"Your monthly payment is: ₦{monthlyPayment:,.2f}")
