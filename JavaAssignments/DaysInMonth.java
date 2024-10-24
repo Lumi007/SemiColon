@@ -60,11 +60,11 @@ public class DaysInMonth {
 	int  numberOfDays;
 
 	if (month == "February" && leapYear == true){
-		numberOfDays = 28;
+		numberOfDays = 29;
 	} else if (month == "September" || month == "April" || month == "June" || month == "November") {
 		numberOfDays = 30; 
 	} else if (month == "February" && leapYear != true){
-		numberOfDays = 29;
+		numberOfDays = 28;
 	} else {
 		numberOfDays = 31;
 	}
