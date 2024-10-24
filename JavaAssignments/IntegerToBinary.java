@@ -15,7 +15,7 @@ public class IntegerToBinary {
 	while (integerToConvert != 0){
 		int rem = integerToConvert % 2; 
 		integerToConvert /= 2;
-	convertedBinary  = rem + convertedBinary;
+		convertedBinary  = rem + convertedBinary;
 	}
 
 	System.out.printf("Binary number is %s", convertedBinary );
