@@ -9,7 +9,7 @@ divisor = int(input("Enter divisor p: "))
 firstDivisible = firstNumberInRange;
 
 while firstDivisible % divisor != 0: 
-            firstDivisible++
+            firstDivisible += 1
         
         
        
