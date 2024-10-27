@@ -3,16 +3,19 @@ public class VowelConsonantChecker {
 	public static void main (String[] args){
 	Scanner input = new Scanner(System.in);
 	
-	System.out.print("Enter a year to check: ");
-	String alphabet = input.nextLine(); 
+	System.out.print("Enter an alphabet to check: ");
+	String alphabet = input.nextLine().toLowerCase(); 
 	
 
-	if (yearToCheck % 4 == 0){
+	if (alphabet.equals("a") || alphabet.equals("e") || alphabet.equals("i") || alphabet.equals("o") || alphabet.equals("u")){
 		
-		System.out.printf("%d is a leap year", yearToCheck);
+		System.out.printf("%s is a Vowels", alphabet);
 	} else {
 	
-		System.out.printf("%d is a leap year", yearToCheck);
+		System.out.printf("%s is a Consonant", alphabet);
 	}
+
+
 	
 	}
+}
