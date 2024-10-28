@@ -26,9 +26,9 @@ public class TaxCalculator {
 			System.out.printf("the Tax for %.2f is %.2f\n", thirdPersonSalary, thirdPersonTax);
 
 		}else {
-			double firstPersonTax = firstPersonSalary * 0.15;
-			double secondPersonTax = secondPersonSalary * 0.15;
-			double thirdPersonTax = thirdPersonSalary * 0.15;
+			double firstPersonTax = firstPersonSalary * 0.20;
+			double secondPersonTax = secondPersonSalary * 0.20;
+			double thirdPersonTax = thirdPersonSalary * 0.20;
 			
 			System.out.printf("the Tax for %.2f is %.2f\n", firstPersonSalary, firstPersonTax);
 			System.out.printf("the Tax for %.2f is %.2f\n", secondPersonSalary, secondPersonTax);

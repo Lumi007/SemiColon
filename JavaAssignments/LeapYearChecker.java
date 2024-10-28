@@ -12,7 +12,7 @@ public class LeapYearChecker {
 		System.out.printf("%d is a leap year", yearToCheck);
 	} else {
 	
-		System.out.printf("%d is a leap year", yearToCheck);
+		System.out.printf("%d is not a leap year", yearToCheck);
 	}
 	
 	}
