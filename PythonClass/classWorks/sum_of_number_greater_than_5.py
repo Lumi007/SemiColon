@@ -5,7 +5,7 @@ sum = 0
 
 while number > 0:
 	rem_char = number % 10
-	if rem_char >= 5
+	if rem_char >= 5:
 		sum += 1
 	number = number//10
 
