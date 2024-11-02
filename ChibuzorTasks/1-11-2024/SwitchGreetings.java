@@ -16,16 +16,48 @@ public class SwitchGreetings  {
 
 	
 	case 1 :
-		System.out.println("Good Morning");
+		System.out.println("1. Good Morning\n2. Good Afternoon\n3. Good Evening\n");
+		int englishChoice = input.nextInt();
+		
+			switch (englishChoice) {
+			case 1: System.out.println("Do have a great morning");
+			break;
+			
+			case 2: System.out.println("Do have a great afternoon");
+			break;
+
+			case 3: System.out.println("Do have a great evening");
+			break;
+
+		}
 	break;
 	case 2 :
-		System.out.println("Ekaaro");
+		System.out.println("1. Ekaaro\n2. Ekaasun\n3. Ekaale\n4. Previous Menu");
+		int yorubaChoice = input.nextInt();
+			switch (yorubaChoice) {
+			case 1: System.out.println("e Ku Ojomo eni");
+			break;
+			
+			case 2: System.out.println("Shey Daadaa lo jo yin lo");
+			break;
+
+			case 3: System.out.println("O daa ro");
+			break;
+			
+			case 4:
+			break;
+
+			default:
+				System.out.println("Invalid Option");
+		}
 	break;
 	case 3 :
-		System.out.println("Ibolachi");
+		System.out.println("1. Otutu oma\n2. Ehihie oma\n3. ka chifoo");
+		int igboChoice = input.nextInt();
 	break;
 	case 4 :
-		System.out.println("Inakwana");
+		System.out.println("1. Inakwana\n2. Ina Gediaa\n3. Ina ni");
+		int hausaChoice = input.nextInt();
 	break;
 
 	}
