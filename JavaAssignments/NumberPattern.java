@@ -14,8 +14,8 @@ public class NumberPattern{
 			for (int j=1; j <= i; j++){
 				System.out.print(i);
 			}
-		for ( int k = 1; k <= rowNumber; i++){
-			for (int j = k; j <= k; j++){
+		for ( j = 1; j <= rowNumber; j++){
+			for ( j = rowNumber; j >= 1; j--){
 				System.out.print(j);
 			}
 		}
