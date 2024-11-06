@@ -9,17 +9,24 @@ public class NumberPattern{
 		System.out.print("Please enter a number: ");
 		int rowNumber = input.nextInt();
 
-		int number = 1;
-		for ( int i = 1;i <= rowNumber; i++){
-			for (int j=1; j <= i; j++){
-				System.out.print(i);
+		
+		for ( int rows = 1; rows <= rowNumber; rows++)
+		{
+			for (int col = 1; col <= rows; col++)
+			{
+				System.out.print(col + " ");
+
 			}
-		for ( j = 1; j <= rowNumber; j++){
-			for ( j = rowNumber; j >= 1; j--){
-				System.out.print(j);
-			}
-		}
 		System.out.println();
+		}
+		
+		for (int rows = 1; rows <= rowNumber; rows++)
+		{
+			for(int col = rowNumber; col >= rows; col--)
+			{
+				System.out.print(col + " ");
+			}
+		System.out.println();	
 		}
 
 
