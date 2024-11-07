@@ -92,7 +92,7 @@ public class MBTITest {
         
         personalityType.append(counts[3] > questionCounts[3]/2 ? "J" : "P");
         
-        // Display personality type
+        
         System.out.println("\nYour personality type is: " + personalityType.toString());
         
         
@@ -115,6 +115,6 @@ public class MBTITest {
         System.out.println("\nFor more information about your personality type, visit:");
         System.out.println("https://www.16personalities.com/");
         
-        input.close();
+    
     }
 }
