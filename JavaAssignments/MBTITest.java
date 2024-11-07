@@ -18,8 +18,8 @@ public class MBTITest {
         char[] answers = new char[20];
         
 
-        int[] counts = {0, 0, 0, 0}; // Counts for E, S, T, J responses
-        int[] questionCounts = {0, 0, 0, 0}; // Total questions for each dimension
+        int[] counts = {0, 0, 0, 0}; 
+        int[] questionCounts = {0, 0, 0, 0};
         
       
         System.out.println("Welcome to MBTI Personality Test");
@@ -31,7 +31,7 @@ public class MBTITest {
             
 
             while(!validAnswer) {
-                // Display question and options
+                
                 System.out.println("\nQuestion " + (i + 1) + ":");
                 System.out.println(questions[i][0] + "?");
                 System.out.println("A) " + questions[i][1]);
