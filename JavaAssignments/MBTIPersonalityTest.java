@@ -11,11 +11,16 @@ public class MBTIPersonalityTest {
 		int[] arrayNumbers = new int[ARRAY_LENGTH];
 
 		int [] arrayFilled = {32, 27, 64, 18,95,14, 90, 70, 60, 37};
-		System.out.printf("%s%8s%n","Index", "Value");
+		
+		for (int counter = 0; counter < arrayFilled.length; counter++)
+		{
+			arrayFilled[counter] = 2 * counter;
+		}
+		System.out.printf("%s%8s%10s%n","Index", "Value", "Default");
 
 		for (int counter = 0; counter < arrayFilled.length; counter++)	
 		{
-			System.out.printf("%5d%8d%n", counter, arrayFilled[counter]);
+			System.out.printf("%5d%8d%10d%n", counter, arrayFilled[counter],arrayNumbers[counter] );
 		}
 
 
