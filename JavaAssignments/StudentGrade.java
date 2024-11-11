@@ -9,7 +9,6 @@ public class StudentGrade {
 	
 	switch (studentGrade/10) {
 
-
 	case 8 :
 	case 9 :
 	case 10 :

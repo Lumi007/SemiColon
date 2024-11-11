@@ -14,9 +14,7 @@ public class StudentGradeSentinel {
 		if (studentGrade == -1) {
 			break;}
 		
-
 		switch (studentGrade/10) {
-
 
 		case 8 :
 		case 9 :
