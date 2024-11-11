@@ -6,7 +6,8 @@ import java.util.Arrays;
 public class MBTIPersonalityTest {
 	public static void main (String[] args)
 	{
-		final int ARRAY_LENGTH = 10;
+		final int ARRAY_LENGTH = 11;
+		int total = 0;
 
 		int[] arrayNumbers = new int[ARRAY_LENGTH];
 
@@ -15,12 +16,13 @@ public class MBTIPersonalityTest {
 		for (int counter = 0; counter < arrayFilled.length; counter++)
 		{
 			arrayFilled[counter] = 2 * counter;
+			total += arrayFilled[counter];
 		}
 		System.out.printf("%s%8s%10s%n","Index", "Value", "Default");
 
 		for (int counter = 0; counter < arrayFilled.length; counter++)	
 		{
-			System.out.printf("%5d%8d%10d%n", counter, arrayFilled[counter],arrayNumbers[counter] );
+			System.out.printf("%5d%8d%10d%10d%n", counter, arrayFilled[counter],arrayNumbers[counter], total );
 		}
 
 
