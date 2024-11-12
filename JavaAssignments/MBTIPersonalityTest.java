@@ -2,35 +2,28 @@ import java.util.Scanner;
 
 import java.util.Arrays;
 
+import java.security.SecureRandom;
+
 
 public class MBTIPersonalityTest {
 	public static void main (String[] args)
 	{
-		int[] array = {0, 0, 0, 0, 0, 0, 1, 2, 3, 2, 1};
-		System.out.println("Grade distribution");
-
-		for (int counter = 0; counter < array.length; counter++)
+		SecureRandom randomNumbers = new SecureRandom();
+		int[] frequency = new int[7];
+		
+		for(int roll = 1; roll <= 60_000_000; roll++)
 		{
+			++frequency[1 + randomNumbers.nextInt(6)];	
+			
+		} 
+		System.out.printf("%s%10s%n" , "Face", "Frequency");
 		
-			if (counter == 10) {
-				System.out.printf("%5d: ", 100);
-			} else {
+		for (int face = 1; face < frequency.length; face++)
+		{
+			System.out.printf("%4d%10d%n ", face, frequency[face]);
 
-				System.out.printf("%02d-%02d: ", counter* 10, counter * 10 + 9);
-			}
-			for (int stars = 0; stars < array[counter]; stars++)
-			{
-			
-				System.out.print("* ");
-
-
-			}
-			System.out.println();
-			
 		}
-		
 
-	
 
 
 
