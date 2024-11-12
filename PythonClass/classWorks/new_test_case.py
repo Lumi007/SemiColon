@@ -26,3 +26,6 @@ class TestCubeFunction(TestCase):
 		actual = newtestcase.multiply_without_star(0,8)
 		expected = 0
 		self.assertEqual(actual, expected)
+		actual = newtestcase.multiply_without_star(8,0)
+		expected = 0
+		self.assertEqual(actual, expected)
