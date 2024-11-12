@@ -14,7 +14,7 @@ class TestCubeFunction(TestCase):
 		expected = 30
 		self.assertEqual(actual, expected)
 	
-	def test_that_the_multiplier_function_raises_exception_with_invalid_inpu(self):
+	def test_that_the_multiplier_function_raises_exception_with_invalid_input(self):
 		self.assertRaises(TypeError, newtestcase.multiply_without_star, "rose")
 
 	def test_that_the_multiplier_function_returns_correct_values_with_float(self):
@@ -22,4 +22,7 @@ class TestCubeFunction(TestCase):
 		expected = 33
 		self.assertEqual(actual, expected)
 	
-	def test_that_the_multiplier_function_
+	def test_that_the_multiplier_function_returns_zero_for_multiplication_by_zero(self):
+		actual = newtestcase.multiply_without_star(0,8)
+		expected = 0
+		self.assertEqual(actual, expected)
