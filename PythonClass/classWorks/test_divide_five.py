@@ -4,7 +4,7 @@ import dividefive
 
 
 class TestDivideFiveFunction(TestCase):
-	def test_that_function_exist(self)
+	def test_that_function_exist(self):
 		dividefive.divisible_by_five(60)
 
 	def test_that_funtion_returns_correct_value(self):
@@ -31,7 +31,7 @@ class TestDivideFiveFunction(TestCase):
 		self.assertEqual(actual, expected)
 		
 	def test_that_function_raises_error_for_negative_input(self):
-		self.assertRaises(ValueError, dividefive.divisible_by_five, "-9")
+		self.assertRaises(ValueError, dividefive.divisible_by_five, -9)
 		
 
 	
