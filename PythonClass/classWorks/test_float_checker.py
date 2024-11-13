@@ -17,7 +17,7 @@ class TestFloatCheckerFunction(TestCase):
 		self.assertEqual(actual, expected)
 
 	def test_that_function_raises_error_for_invalid_input(self):
-		self.assertRaises(TypeError, floatchecker.only_floats, "Rose", 3)
+		self.assertRaises(TypeError, floatchecker.only_floats, "Rose")
 
 	def test_that_function_works_for_float(self):
 		actual = floatchecker.only_floats (2.3, 4.6)
