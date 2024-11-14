@@ -47,7 +47,7 @@ def number_game():
 		count+= 1
 
 	print(f"you got {right_answers} right and {wrong_answers} wrong")
-	print("This are the answers to the wrong questions")
+	print("Theses are the answers to the wrong questions")
 	for i in failed_answers:
 		print(i)
 	

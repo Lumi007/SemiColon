@@ -19,8 +19,14 @@ public class MBTIPersonalityTest {
 		ArrayList<String> sectionDAnswers = new ArrayList<>();
 
 		String personalityType = "";
-		int countA = 0;
-		int countB = 0;	
+		int sectionACountA = 0;
+		int sectionACountB = 0;
+		int sectionBCountA = 0;
+		int sectionBCountB = 0;	
+		int sectionCCountA = 0;
+		int sectionCCountB = 0;
+		int sectionDCountA = 0;
+		int sectionDCountB = 0;
 
 		Scanner input = new Scanner(System.in);
 
@@ -29,111 +35,130 @@ public class MBTIPersonalityTest {
 
 		for (int i = 0; i < sectionA.length; i++)
 		{	
-			System.out.println(sectionA[i][0]);
-			System.out.println(sectionA[i][1]);
-			System.out.println("Please select A or B");
-			System.out.print(">>>>>>>>>>>  ");
-			char answer = input.next().charAt(0);
-			
+			boolean validAnswer = false;
+			while (!validAnswer) {	
+				System.out.println(sectionA[i][0]);
+				System.out.println(sectionA[i][1]);
+				System.out.println("Please select A or B");
+				System.out.print(">>>>>>>>>>>  ");
+				String response = input.next().toUpperCase();
+				
+				char answer = response.charAt(0);
 
 				if (answer == 'A')
 				{
-					countA++;
+					sectionACountA++;
 					sectionAAnswers.add(sectionA[i][0]);
+					validAnswer = true;
 					
 				} else if (answer == 'B')
 				{
-					countB++;
+					sectionACountB++;
 					sectionAAnswers.add(sectionA[i][1]);
+					validAnswer = true;
 
 				} else {
-					System.out.println("Please enter eithe A or B");			
+					System.out.println("Please enter either A or B");			
 				}
-
-				personalityType += countA > countB ? "E" : "I";
-			
+			}
 		}
-		
+		personalityType += sectionACountA > sectionACountB ? "E" : "I";
 		for (int i = 0; i < sectionB.length; i++)
 		{	
-			System.out.println(sectionB[i][0]);
-			System.out.println(sectionB[i][1]);
-			System.out.println("Please select A or B");
-			System.out.print(">>>>>>>>>>>  ");
-			char answer = input.next().charAt(0);
-			
+			boolean validAnswer = false;
+			while (!validAnswer) {	
+				System.out.println(sectionB[i][0]);
+				System.out.println(sectionB[i][1]);
+				System.out.println("Please select A or B");
+				System.out.print(">>>>>>>>>>>  ");
+				String response = input.next().toUpperCase();
+				
+				char answer = response.charAt(0);
+
 
 				if (answer == 'A')
 				{
-					countA++;
+					sectionBCountA++;
 					sectionBAnswers.add(sectionB[i][0]);
+					validAnswer = true;
 					
 				} else if (answer == 'B')
 				{
-					countB++;
+					sectionBCountB++;
 					sectionBAnswers.add(sectionB[i][1]);
+					validAnswer = true;
 
 				} else {
 					System.out.println("Please enter either A or B");			
 				}
 
-				personalityType += countA > countB ? "S" : "N";
+				
+			}
 	
 		}
-		
+		personalityType += sectionBCountA > sectionBCountB ? "S" : "N";
 		for (int i = 0; i < sectionC.length; i++)
 		{	
-			System.out.println(sectionC[i][0]);
-			System.out.println(sectionC[i][1]);
-			System.out.println("Please select A or B");
-			System.out.print(">>>>>>>>>>>  ");
-			char answer = input.next().charAt(0);
-			
-			
+			boolean validAnswer = false;
+			while (!validAnswer) {	
+				System.out.println(sectionC[i][0]);
+				System.out.println(sectionC[i][1]);
+				System.out.println("Please select A or B");
+				System.out.print(">>>>>>>>>>>  ");
+				String response = input.next().toUpperCase();
+				
+				char answer = response.charAt(0);
 
 				if (answer == 'A')
 				{
-					countA++;
+					sectionCCountA++;
 					sectionCAnswers.add(sectionC[i][0]);
+					validAnswer = true;
 					
 				} else if (answer == 'B')
 				{
-					countB++;
+					sectionCCountB++;
 					sectionCAnswers.add(sectionC[i][1]);
+					validAnswer = true;
 
 				} else {
 					System.out.println("Please enter either A or B");			
 				}
 
-				personalityType += countA > countB ? "T" : "F";
+			}
 		}
-		
+		personalityType += sectionCCountA > sectionCCountB ? "T" : "F";
 		for (int i = 0; i < sectionD.length; i++)
 		{	
-			System.out.println(sectionA[i][0]);
-			System.out.println(sectionA[i][1]);
-			System.out.println("Please select A or B");
-			System.out.print(">>>>>>>>>>>  ");
-			char answer = input.next().charAt(0);
-			
-		
+			boolean validAnswer = false;
+			while (!validAnswer) {	
+				System.out.println(sectionD[i][0]);
+				System.out.println(sectionD[i][1]);
+				System.out.println("Please select A or B");
+				System.out.print(">>>>>>>>>>>  ");
+				String response = input.next().toUpperCase();
+				
+				char answer = response.charAt(0);
 
 				if (answer == 'A')
 				{
-					countA++;
+					sectionDCountA++;
 					sectionDAnswers.add(sectionD[i][0]);
+					validAnswer = true;
 					
 				} else if (answer == 'B')
 				{
-					countB++;
+					sectionDCountB++;
 					sectionDAnswers.add(sectionD[i][1]);
+					validAnswer = true;
 
 				} else {
 					System.out.println("Please enter eithe A or B");			
 				}
 
-				personalityType += countA > countB ? "J" : "P";
+			}
 		}
+		personalityType += sectionDCountA > sectionDCountB ? "J" : "P";
 	System.out.println(personalityType);
 
 	}
