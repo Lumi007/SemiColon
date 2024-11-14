@@ -159,6 +159,8 @@ public class MBTIPersonalityTest {
 			}
 		}
 		personalityType += sectionDCountA > sectionDCountB ? "J" : "P";
+		
+
 		System.out.println(personalityType);
 		
 		switch (personalityType) {
