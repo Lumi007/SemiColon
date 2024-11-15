@@ -2,7 +2,6 @@ from unittest import TestCase
 import dividefive
 
 
-
 class TestDivideFiveFunction(TestCase):
 	def test_that_function_exist(self):
 		dividefive.divisible_by_five(60)
