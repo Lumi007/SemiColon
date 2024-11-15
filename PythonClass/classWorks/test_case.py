@@ -16,6 +16,7 @@ class TestCubeFunction(TestCase):
 	
 	def test_that_the_cube_function_raises_exception_with_invalid_inpu(self):
 		self.assertRaises(TypeError, functionpractise.get_cube, "rose")
+
 	def test_that_the_cube_function_returns_correct_values_with_float(self):
 		actual = functionpractise.get_cube(2.3)
 		expected = 12.167
