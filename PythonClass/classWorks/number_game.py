@@ -1,8 +1,6 @@
 from random import randrange
 
 
-
-
 def number_game():
 	count = 1
 	wrong_answers = 0
@@ -17,6 +15,7 @@ def number_game():
 		if answer == first_number + second_number:
 			right_answers+= 1
 		else:
+
 			wrong_answers+= 1
 			failed_answers.append(f"{count} : {first_number + second_number}")
 		count+= 1
