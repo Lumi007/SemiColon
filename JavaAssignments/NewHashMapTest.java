@@ -9,9 +9,12 @@ public class NewHashMapTest {
 		examScores.put("Maths", 75);
 		examScores.put("Physics", 89);
 		examScores.put("Programming", 90);
+		examScores.put("Sciences", 100);
 
+		examScores.putIfAbsent("Java", 90);
+		examScores.replace("Programming", 50);
 
-		System.out.println(examScores.toString());
+		System.out.println(examScores.get("Programming"));
 
 
 
