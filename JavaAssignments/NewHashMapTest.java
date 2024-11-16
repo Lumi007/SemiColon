@@ -14,7 +14,11 @@ public class NewHashMapTest {
 		examScores.putIfAbsent("Java", 90);
 		examScores.replace("Programming", 50);
 
-		System.out.println(examScores.get("Programming"));
+		examScores.forEach((subject, score) -> {
+			examScores.replace(subject, score - 10);
+		});
+
+		System.out.println(examScores);
 
 
 
