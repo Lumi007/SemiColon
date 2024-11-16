@@ -12,15 +12,15 @@ public class ObjectOriented{
 
 
 
-	System.out.printf("%s was born in %s, and he is now %s years old", youngerUser.name, youngerUser.dateOfBirth, youngerUser.age());
+	System.out.printf("%s was born in %s, and he is now %s years old\n", youngerUser.name, youngerUser.dateOfBirth, youngerUser.age());
 
 
 	User olderUser = new User();
 
 	olderUser.name = "Bankole S. Fakorede";
-	olderUser.dateOfBirth = LocalDate.parser("1968-02-28");
+	olderUser.dateOfBirth = LocalDate.parse("1958-02-28");
 
-	System.out.printf("%s was born in %s, and he is now %s years old", olderUser.name, OlderUser.dateOfBirth, olderUser.age());
+	System.out.printf("%s was born in %s, and he is now %s years old", olderUser.name, olderUser.dateOfBirth, olderUser.age());
 	}
 
 
