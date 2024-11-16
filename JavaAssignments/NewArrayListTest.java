@@ -16,6 +16,13 @@ public class NewArrayListTest {
 
 		numbers.sort(Comparator.naturalOrder());
 		System.out.println(numbers.toString());
+
+		numbers.forEach(number -> {
+			numbers.set(numbers[number], number*2
+			System.out.println(numbers);
+
+		
+		});
 				
 		
 
