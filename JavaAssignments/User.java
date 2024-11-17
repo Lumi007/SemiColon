@@ -6,7 +6,7 @@ public class User {
 
 	private String name;
 	private LocalDate dateOfBirth;
-	public ArrayList<Book> books = new ArrayList<Book>();
+	private ArrayList<Book> books = new ArrayList<Book>();
 
 	
 	User(String name, String dateOfBirth){
@@ -25,6 +25,10 @@ public class User {
 		return this.dateOfBirth.toString();
 	}
 
+	public String borrowedBooks(){
+		return books.toString();
+	}
+	
 	public void borrow (Book book){
 		this.books.add(book);
 	}
