@@ -4,24 +4,26 @@ public class ObjectOriented{
 	public static void main(String... args){
 	
 
-	User user = new User();
+	User user = new User("Olumide D. Fakorede", "1993-05-17");
 
-
-	user.name = "Olumide D. Fakorede";
-	user.dateOfBirth = LocalDate.parse("1993-05-17");
 
 	
 	Book book = new Book();
 
 
 	book.title = "New Beginings";
-	book.author = user.name;
+	book.author = user.name; 
+
+
+	user.borrow(book);
 
 	System.out.printf("%s was born in %s, and he is now %s years old\n", user.name, user.dateOfBirth, user.age());
 
 
-	System.out.printf("%s is the writer of %s", book.author, book.title);
+	System.out.printf("%s is the writer of %s\n", book.author, book.title);
 
+	
+	System.out.printf("%s has borrowed these books: %s", user.name, user.books);
 	}
 
 

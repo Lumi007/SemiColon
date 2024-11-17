@@ -8,7 +8,13 @@ public class User {
 	public LocalDate dateOfBirth;
 	public ArrayList<Book> books = new ArrayList<Book>();
 
-	public void borrow (Book book){
+	
+	User(String name, String dateOfBirth){
+		this.name = name;
+		this.dateOfBirth = LocalDate.parse(dateOfBirth);
+	
+	}
+public void borrow (Book book){
 		this.books.add(book);
 	}
 
