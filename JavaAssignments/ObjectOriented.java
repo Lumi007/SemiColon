@@ -12,6 +12,8 @@ public class ObjectOriented{
 
 	AudioBook audioBook = new AudioBook("New Beginings", user.getName(), 30000);
 
+	EBook eBook = new EBook ("Big Drift", user.getName(), "epub");
+
 
 
 	user.borrow(book);
@@ -25,6 +27,7 @@ public class ObjectOriented{
 	System.out.printf("%s has borrowed these books: %s\n", user.getName(), user.borrowedBooks());
 
 	System.out.println(audioBook);
+	System.out.println(eBook);
 	}
 
 
