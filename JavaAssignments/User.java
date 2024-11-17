@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class User {
 
-	public String name;
-	public LocalDate dateOfBirth;
+	private String name;
+	private LocalDate dateOfBirth;
 	public ArrayList<Book> books = new ArrayList<Book>();
 
 	
@@ -14,7 +14,18 @@ public class User {
 		this.dateOfBirth = LocalDate.parse(dateOfBirth);
 	
 	}
-public void borrow (Book book){
+
+
+	public String getName(){
+		return this.name;
+	
+	}
+
+	public String getDateOfBirth(){
+		return this.dateOfBirth.toString();
+	}
+
+	public void borrow (Book book){
 		this.books.add(book);
 	}
 

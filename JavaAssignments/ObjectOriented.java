@@ -12,18 +12,18 @@ public class ObjectOriented{
 
 
 	book.title = "New Beginings";
-	book.author = user.name; 
+	book.author = user.getName(); 
 
 
 	user.borrow(book);
 
-	System.out.printf("%s was born in %s, and he is now %s years old\n", user.name, user.dateOfBirth, user.age());
+	System.out.printf("%s was born in %s, and he is now %s years old\n", user.getName(), user.getDateOfBirth(), user.age());
 
 
 	System.out.printf("%s is the writer of %s\n", book.author, book.title);
 
 	
-	System.out.printf("%s has borrowed these books: %s", user.name, user.books);
+	System.out.printf("%s has borrowed these books: %s", user.getName(), user.books);
 	}
 
 
