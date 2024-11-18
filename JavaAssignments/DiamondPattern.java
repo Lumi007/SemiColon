@@ -17,10 +17,10 @@ public class DiamondPattern{
 			for (int spaceColumn = row; spaceColumn <= rows; spaceColumn++) {
 				System.out.print(" ");
             		}
-			for (int starColumn = 1; starColumn <= row; starColumn++) {					System.out.print("*");
+			for (int starColumn = 1; starColumn <= row; starColumn++) {					System.out.print(starColumn);
 			}
 
-			for (int starColumn = 1; starColumn <= row-1; starColumn++) {					System.out.print("*");
+			for (int starColumn = 1; starColumn <= row-1; starColumn++) {					System.out.print(starColumn);
 
 			}
 			System.out.println();
@@ -28,13 +28,13 @@ public class DiamondPattern{
 		
 
 		for (int row = 1; row <= rows; row++) {
-			for (int spaceColumn = rows; spaceColumn >= row; spaceColumn++) {
+			for (int spaceColumn = 1; spaceColumn <= row; spaceColumn++) {
 				System.out.print(" ");
             		}
-			for (int starColumn = rows; starColumn >= 1; starColumn--) {					System.out.print("*");
+			for (int starColumn = row; starColumn <= rows; starColumn++) {					System.out.print("*");
 			}
 
-			for (int starColumn =rows; starColumn >= 1; starColumn--) {					System.out.print("*");
+			for (int starColumn =row; starColumn <= rows-1; starColumn++) {					System.out.print("*");
 
 			}
 			System.out.println();
