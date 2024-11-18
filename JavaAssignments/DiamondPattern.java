@@ -20,7 +20,7 @@ public class DiamondPattern{
 			for (int starColumn = 1; starColumn <= row; starColumn++) {					System.out.print("*");
 			}
 
-			for (int starColumn = 1; starColumn <= row; starColumn++) {					System.out.print("*");
+			for (int starColumn = 1; starColumn <= row-1; starColumn++) {					System.out.print("*");
 
 			}
 			System.out.println();
