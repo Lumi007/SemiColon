@@ -1,5 +1,7 @@
 student_file = open("students.txt", "r" )
+for student in student_file.readlines():
+	print(student)	
 
-print(student_file.read())
+
 
 student_file.close
