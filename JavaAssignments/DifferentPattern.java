@@ -15,8 +15,12 @@ public class DifferentPattern{
 
 		for (int row = 1; row <= rows; row++) {
 			for (int spaceColumn = row; spaceColumn <= rows; spaceColumn++) {
+				System.out.print(" ");
+            		}
+			for (int spaceColumn = 1; spaceColumn <= row; spaceColumn++) {
 				System.out.print("* ");
             		}
+		
 		
 			System.out.println();
 		}
