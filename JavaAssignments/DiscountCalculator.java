@@ -11,24 +11,33 @@ public class DiscountCalculator {
 
 		System.out.println("Hello " + customerName + ", Welcome to the discount app   ");
 
-		System.out.print(": ");
+		System.out.print("Please select a customer type using 1 or 2\n1. Premium.\n2. Regular\n>>> ");
 		int customerType = input.nextInt();
 
+		
+
+		System.out.print("Are you a repeat customer, please select 1 or 2\n1. Yes.\n2. No.\n>>> ");
+		int repeatType = input.nextInt();
+
+		
+		
+		System.out.print("Are you a repeat customer, please select 1 or 2\n1. Yes.\n2. No.\n>>> ");
+		double itemPrice = input.nextDouble();
 
 
-		if (studentGrade > 80 && studentGrade <= 100){
+		if (customerType == 1 &&  repeatType == 1){
 			System.out.print("You are a Distinction Student");
 
-		} else if (studentGrade >= 60 && studentGrade < 80){
+		} else if (customerType == 1 &&  repeatType == 1){
 			System.out.print("You are a first class Student");
 
-		} else if (studentGrade >= 40 && studentGrade < 60){
+		} else if (customerType == 1 &&  repeatType == 1){
 			System.out.print("You are a second class Student");
 
-		} else if (studentGrade > 32 && studentGrade < 40){
+		} else if (customerType == 1 &&  repeatType == 1){
 			System.out.print("You are a pass Student");
 		
-		} else if (studentGrade >= 0 && studentGrade < 32){
+		} else if (customerType == 1 &&  repeatType == 1){
 			System.out.print("You fail the course");
 		
 		} else {
