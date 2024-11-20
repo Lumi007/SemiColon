@@ -6,6 +6,8 @@ public class DiscountCalculator {
 	
 		Scanner input = new Scanner(System.in);
 
+		float discountedPrice = 0;
+
 		System.out.print("Hello, Welcome to the Semicolon Mall, Please enter your name:  ");
 		String customerName = input.nextLine();
 
@@ -26,6 +28,7 @@ public class DiscountCalculator {
 
 
 		if (customerType == 1 &&  repeatType == 1){
+			
 			System.out.print("You are a Distinction Student");
 
 		} else if (customerType == 1 &&  repeatType == 1){
