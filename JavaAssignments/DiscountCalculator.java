@@ -6,7 +6,7 @@ public class DiscountCalculator {
 	
 		Scanner input = new Scanner(System.in);
 
-		float discountedPrice = 0;
+		double discountedPrice = 0;
 
 		System.out.print("Hello, Welcome to the Semicolon Mall, Please enter your name:  ");
 		String customerName = input.nextLine();
@@ -28,23 +28,24 @@ public class DiscountCalculator {
 
 
 		if (customerType == 1 &&  repeatType == 1){
-			
-			System.out.print("You are a Distinction Student");
+			discountedPrice = itemPrice * (1 - 0.12);
+			System.out.print("Thank you for repeat purchase as a premium customer, your discounted price is: " + discountedPrice);
 
-		} else if (customerType == 1 &&  repeatType == 1){
-			System.out.print("You are a first class Student");
+		} else if (customerType == 1 &&  repeatType == 2){
+			discountedPrice = itemPrice * (1 - 0.10);
+			System.out.print("Thank you for purchase as a premium customer, your discounted price is: " + discountedPrice);
 
-		} else if (customerType == 1 &&  repeatType == 1){
-			System.out.print("You are a second class Student");
+		} else if (customerType == 2 &&  repeatType == 1){
+			discountedPrice = itemPrice * (1 - 0.07);
+			System.out.print("Thank you for repeat purchase as a regular customer, your discounted price is: " + discountedPrice);;
 
-		} else if (customerType == 1 &&  repeatType == 1){
-			System.out.print("You are a pass Student");
+		} else if (customerType == 2 &&  repeatType == 2){
+			discountedPrice = itemPrice * (1 - 0.05);
+			System.out.print("Thank you for purchase as a regular customer, your discounted price is: " + discountedPrice);
 		
-		} else if (customerType == 1 &&  repeatType == 1){
-			System.out.print("You fail the course");
 		
 		} else {
-			System.out.print("You have entered an invalid score");
+			System.out.print("Please cross check the details you entered.");
 		
 		
 
