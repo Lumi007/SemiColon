@@ -21,7 +21,7 @@ public class DiscountCalculator {
 
 		
 		
-		System.out.print("Are you a repeat customer, please select 1 or 2\n1. Yes.\n2. No.\n>>> ");
+		System.out.print("Please enter the amount for the goods purchased.\n>>> ");
 		double itemPrice = input.nextDouble();
 
 
