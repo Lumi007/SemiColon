@@ -8,12 +8,8 @@ public class NewPatterns {
 				System.out.print("*");
 			}
 			for (int space = row; space <= rows; space++){
-					System.out.print(" ");
+					System.out.print("  ");
 			}	
-			for (int space = row; space <= rows; space++){
-					System.out.print(" ");
-				
-			}
 			for (int star2 = 1; star2 <= row; star2++){
 					System.out.print("*");
 				
@@ -23,12 +19,14 @@ public class NewPatterns {
 		System.out.println();
 		}
 		for (int row = 1; row <= rows; row++){
-			for (int space = 1; space <= row; space++){
-				System.out.print("  ");
+			for (int star = row; star <= rows; star++){
+				System.out.print("*");
 			}
-			for (int star = row; star <= rows-1; star++){
-					System.out.print(" * ");
-				
+			for (int space = 1; space <= row; space++){
+					System.out.print("  ");
+			}
+			for (int star = row; star <= rows; star++){
+				System.out.print("*");
 			}
 		System.out.println();
 		}
