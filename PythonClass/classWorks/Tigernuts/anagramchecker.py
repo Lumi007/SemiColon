@@ -1,6 +1,6 @@
-def anagram_checker(str1, str2):
-	for char1 in sorted(str1):
-		for char2 in sorted(str2):
+def anagram_checker(phraseOne, phraseTwo):
+	for char1 in sorted(phraseOne):
+		for char2 in sorted(phraseTwo):
 			if char1 == char2:
 				return True
 			else:
