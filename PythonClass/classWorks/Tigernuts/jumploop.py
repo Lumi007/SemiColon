@@ -7,5 +7,8 @@ def jump_loop(numbers:list):
 
 
 print(jump_loop([1,2,3,4]))
+print(jump_loop([1,2,-3,4]))
+print(jump_loop([1,2.2,3,4]))
+
 		
 	
