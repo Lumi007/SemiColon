@@ -10,17 +10,19 @@ public class NewMethods {
 
 	System.out.print("Please enter a number of rows: ");
 	
-	printStar(7);
+	int numberOfTimes = input.nextInt();
+	printStar(numberOfTimes);
 
-	public static String printStar(int numberOfTimes){
+	
+	
+
+
+	}
+
+	public static void printStar(int numberOfTimes){
 		for (int count = 0; count < numberOfTimes; count++)
-			print("*");
-	}
-
-
+			System.out.print("*");
 
 	}
-
-
 
 }
