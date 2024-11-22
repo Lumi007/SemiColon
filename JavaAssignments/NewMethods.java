@@ -12,6 +12,8 @@ public class NewMethods {
 	
 	int numberOfTimes = input.nextInt();
 	printStar(numberOfTimes);
+	printStar(numberOfTimes);
+	printStar(numberOfTimes);
 
 	
 	
@@ -22,6 +24,12 @@ public class NewMethods {
 	public static void printStar(int numberOfTimes){
 		for (int count = 0; count < numberOfTimes; count++)
 			System.out.print("*");
+
+	}
+
+	public static void newLine(int numberOfTimes){
+		for (int count = 0; count < numberOfTimes; count++)
+			System.out.println;
 
 	}
 
