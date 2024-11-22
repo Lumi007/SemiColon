@@ -8,12 +8,12 @@ public class NewMethods {
 	Scanner input = new Scanner(System.in);
 	
 
-	System.out.print("Please enter a number of rows: "):
+	System.out.print("Please enter a number of rows: ");
 	
-	
+	printStar(7);
 
 	public static String printStar(int numberOfTimes){
-		for (int count = 0; count < numberOfTimes; count++
+		for (int count = 0; count < numberOfTimes; count++)
 			print("*");
 	}
 
