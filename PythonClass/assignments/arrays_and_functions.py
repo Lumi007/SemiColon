@@ -95,8 +95,8 @@ def join_lists(first: list, second: list):
     if type(first) is not list or type(second) is not list:
         raise TypeError
     
-    joined = first + second
-    return joined
+    merged_array = first + second
+    return merged_array
     
 
 def take_elements(first: list, second: list):
