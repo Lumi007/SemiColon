@@ -93,7 +93,7 @@ def get_sum_for(numbers: list):
     
 def join_lists(first: list, second: list):
     if type(first) is not list or type(second) is not list:
-        raise TypeError("not list")
+        raise TypeError
     
     joined = first + second
     return joined
@@ -101,7 +101,7 @@ def join_lists(first: list, second: list):
 
 def take_elements(first: list, second: list):
     if type(first) is not list or type(second) is not list:
-        raise TypeError("not list")
+        raise TypeError
     for index in range(len(second)):
         first.insert((index + 1), second[index])
         index += 2
