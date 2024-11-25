@@ -120,6 +120,11 @@ def seperate_numbers(numbers: int):
     return digits
     
     
-
+def is_prime(pnumber):
+	if type(number) is int:
+		if number <= 1: return False
+	for number in range(2, pnumber):
+		if pnumber % number == 0: return False
+	return True
 
         
