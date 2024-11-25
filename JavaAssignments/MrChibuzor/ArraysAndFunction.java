@@ -14,9 +14,9 @@ public class ArraysAndFunction {
     }
     
     
-    public static boolean checkOccurance(int[] numbers, int specialValue) {
+    public static boolean checkOccurance(int[] numbers, int value) {
         boolean status = false;
-        for (int number : numbers) if (number == specialValue) status = true;
+        for (int number : numbers) if (number == value) status = true;
         return status;
     }
     
