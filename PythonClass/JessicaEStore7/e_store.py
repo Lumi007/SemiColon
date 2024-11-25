@@ -1,15 +1,14 @@
 
 
-
 def main_menu():
     print("""
-Main menu
-1. View Products
-2. Add to Cart
-3. Remove from Cart
-4. Checkout
-5. exit
-    """)
+	Main menu
+	1. View Products
+	2. Add to Cart
+	3. Remove from Cart
+	4. Checkout
+	5. exit
+    	""")
     print(f"you have {len(cart[0])} items")
     response = int(input("> "))
     match response:
