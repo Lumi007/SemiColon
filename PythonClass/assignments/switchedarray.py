@@ -5,7 +5,8 @@ def switched_array(numbers:list, element):
 		return numbers
 	
 
-def split_array(numbers:list, element):
+def split_array(numbers:list):
+	element = len(numbers) // 2
 	splited_array = [numbers[:element], numbers[element:]]
 	return splited_array
 	
@@ -27,7 +28,7 @@ print(switched_array([1,2,3,4,5],3))
 
 print(get_boolean_even_odd([1,2,3,4,5]))
 
-print(split_array([1,2,3,4,5], 2))
+print(split_array([1,2,3,4,5,6]))
 
 
 
