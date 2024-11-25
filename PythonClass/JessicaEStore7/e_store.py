@@ -6,8 +6,9 @@ def main_menu():
 	1. View Products
 	2. Add to Cart
 	3. Remove from Cart
-	4. Checkout
-	5. exit
+	4. View Cart
+	5. Checkout
+	6. exit
     	""")
     print(f"you have {len(cart[0])} items")
     response = int(input("> "))
@@ -15,8 +16,9 @@ def main_menu():
         case 1: view_products()
         case 2: add_to_cart()
         case 3: remove_from_cart()
-        case 4: check_out()
-        case 5: print("exiting...")
+	case 4: view_cart()
+        case 5: check_out()
+        case 6: print("exiting...")
         
         
         
