@@ -76,15 +76,15 @@ def remove_from_cart():
         
 def view_cart():
 	for index in range(len(cart)):
-		print(cart[0][index] cart[1][index])
-		response = int(input("Would you like to checkout; Press 1 for yes or 2 to go back to main menu"))
-		if response == 1:
-			check_out()
-		elif response == 2:
-			main_menu()
-		else:
-			print("invalid input, returning to main menu")
-			main_menu()
+		print(f"{cart[0][index]} {cart[1][index]}")
+	response = int(input("Would you like to checkout; Press 1 for yes or 2 to go back to main menu"))
+	if response == 1:
+		check_out()
+	elif response == 2:
+		main_menu()
+	else:
+		print("invalid input, returning to main menu")
+		main_menu()
 			
 		
 
