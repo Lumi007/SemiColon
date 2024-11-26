@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 
 public class PrimeCheckerTest{
-	public void getPrimeBeforeInputTest(){
+	public static void getPrimeBeforeInputTest(){
 
 		//given (pre-conditions)
 		PrimeChecker primeChecker = new PrimeChecker();
@@ -10,7 +10,7 @@ public class PrimeCheckerTest{
 
 		//action (the functionality being tested)
 		int input = 19;
-		int[] primeNumbers = primeChecker.getPrimeNumbersBeforeInput(input);
+		int[] primeNumbers = primeChecker.getPrimeNumberBeforeInput(input);
 
 
 		//check
@@ -24,14 +24,14 @@ public class PrimeCheckerTest{
 		
 		}
 
-	
+	System.out.println("Test passed: \nexpected: " + Arrays.toString((expected)) + "\nactual: []");
 
 	}
 
 
 	public static void main(String[] arg){
 
-		getPrimeNumberBeforeInputTest();
+		getPrimeBeforeInputTest();
 	
 	}
 
