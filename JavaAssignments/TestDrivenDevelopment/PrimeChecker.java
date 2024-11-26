@@ -4,7 +4,7 @@ import java.util.stream.IntStream;
 
 public class PrimeChecker{
 	public int[] getPrimeNumberBeforeInput(int input){
-		return IntStream.rangeClosed(1, input)
+		return IntStream.rangeClosed(2, input)
 			.filter((number) ->isNumberPrime(number))
 			.toArray();
 
