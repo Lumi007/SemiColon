@@ -1,24 +1,24 @@
 
 
 def main_menu():
-    print("""
-	Main menu
-	1. View Products
-	2. Add to Cart
-	3. Remove from Cart
-	4. View Cart
-	5. Checkout
-	6. exit
-    	""")
-    print(f"you have {len(cart[0])} items")
-    response = int(input("> "))
-    match response:
-        case 1: view_products()
-        case 2: add_to_cart()
-        case 3: remove_from_cart()
-	case 4: view_cart()
-        case 5: check_out()
-        case 6: print("exiting...")
+	print("""
+		Main menu
+		1. View Products
+		2. Add to Cart
+		3. Remove from Cart
+		4. View Cart
+		5. Checkout
+		6. exit
+    		""")
+	print(f"you have {len(cart[0])} items")
+	response = int(input("> "))
+	match response:
+		case 1: view_products()
+		case 2: add_to_cart()
+		case 3: remove_from_cart()
+		case 4: view_cart()
+		case 5: check_out()
+		case 6: print("exiting...")
         
         
         
@@ -74,7 +74,19 @@ def remove_from_cart():
         print("no index")
         
         
-
+def view_cart():
+	for index in range(len(cart)):
+		print(cart[index] cart[0])
+		response = int(input("Would you like to checkout; Press 1 for yes or 2 to go back to main menu"))
+		if response == 1:
+			check_out()
+		elif response == 2:
+			main_menu()
+		else:
+			print("invalid input, returning to main menu")
+			main_menu()
+			
+		
 
 
 products = [["laptop", "phone", "headphones"], [1000, 500, 100]]
