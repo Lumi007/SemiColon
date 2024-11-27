@@ -7,9 +7,9 @@ public class PrimeCheckerStandardTest {
 	public void getPrimeBeforeInputTest() {
 		// given (pre-conditions)
 		PrimeChecker primeChecker = new PrimeChecker();
+		int input = 19;	
         
 		// action (the functionality being tested)
-		int input = 19;	
 		int[] primeNumbers = primeChecker.getPrimeNumberBeforeInput(input);
 		System.out.println("actual : " + Arrays.toString(primeNumbers));
         
@@ -23,7 +23,17 @@ public class PrimeCheckerStandardTest {
 	@Test
 	public void testThatGetPrimeNumberFailsForNegativeValue{
 	
-		
+		//given
+		PrimeChecker primeChecker = new PrimeChecker();
+		int input = -9;
+
+	
+		//action
+		int[] primeNumbers = primeChecker.getPrimeNumberBeforeInput(input);
+
+
+		//check
+		assertThrows();
 	}
 
 
