@@ -22,7 +22,7 @@ public class PrimeCheckerStandardTest {
 
 
 	@Test
-	public void testThatGetPrimeNumberFailsForNegativeValue{
+	public void testThatGetPrimeNumberFailsForNegativeValue() {
 	
 		//given
 		PrimeChecker primeChecker = new PrimeChecker();
@@ -34,7 +34,7 @@ public class PrimeCheckerStandardTest {
 
 
 		//check
-		assertThrows(IllegalArgumentException.class, primeChecker.getPrimeNumberBeforeInput(input));
+		assertThrows(IllegalArgumentException.class, ()-> primeChecker.getPrimeNumberBeforeInput(input));
 	}
 
 
