@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class PrimeCheckerStandardTest {
 	@Test
@@ -33,7 +34,7 @@ public class PrimeCheckerStandardTest {
 
 
 		//check
-		assertThrows();
+		assertThrows(IllegalArgumentException.class, primeChecker.getPrimeNumberBeforeInput(input));
 	}
 
 
