@@ -1,4 +1,4 @@
-public class pangramChecker{
+public class PangramChecker{
 	public static boolean isPangram(String s) {
         	if (s.length() < 26) {
             		return false;
