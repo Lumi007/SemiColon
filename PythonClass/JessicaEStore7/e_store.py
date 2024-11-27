@@ -66,12 +66,12 @@ def remove_from_cart():
         print(f"{index + 1}. {cart[0][index]}")
     response = int(input("> "))
     
-    if len(cart) == 2:
+    if len(cart) > 1:
         cart[0].pop([0][response - 1])
         cart[1].pop([0][response - 1])
         main_menu()
     else:
-        print("no index")
+        print("You have not added any iten to your cart")
         
         
 def view_cart():
