@@ -11,6 +11,7 @@ public class CheckOutSystem {
 	static Date currentDateAndTime = new Date();
 	static String cashierName;
 	static String customerName;
+        static double amountpaid = 0.0;
 	
 
 	public static void main(String[] args) {
@@ -46,7 +47,7 @@ public class CheckOutSystem {
 
 		System.out.print("Do you want to add another item? (yes/no) ");
 		String anotherProduct = input.nextLine().toLowerCase();
-		if (!anotherProduct.equals("yes")) {
+		if (!anotherProduct.equals("yes") || goodsBought.size() == 100) {
 			printInvoice();
 		}else {
 			displayQuestions();
@@ -67,12 +68,13 @@ public class CheckOutSystem {
 		System.out.println("Date: " +currentDateAndTime);
 		System.out.println("Cashier Name: " +cashierName);
 		System.out.println("Customer Name: " +customerName);
-		System.out.println("INVOICE");
+		System.out.println("==========================================");
+		System.out.println("ITEMS\t\t QTY\t PRICE\t TOTAL(NGN)");
 
 		System.out.println("----------------------------------------");
 		for (int i = 0; i < goodsBought.size(); i++) {
     		double lineTotal = goodsNo.get(i) * goodsPrice.get(i);
-            	System.out.printf("%-15s %3d x %6.2f %8.2f\n", goodsBought.get(i), goodsNo.get(i), goodsPrice.get(i), lineTotal);
+            	System.out.printf("%-15s %3d x   %6.2f %8.2f\n", goodsBought.get(i), goodsNo.get(i), goodsPrice.get(i), lineTotal);
 		}
         
         	System.out.println("-----------------------------------------");
@@ -80,7 +82,46 @@ public class CheckOutSystem {
         	System.out.printf("%-20s %10.2f\n", "VAT (7.5%):", vat);
         	System.out.printf("%-20s %10.2f\n", "Total:", total);
 
-		System.out.println("----------------------------------------------------------");
+		System.out.println("-----------------------------------------");
+                System.out.print("How much did the customer give you");
+                amountpaid = input.nextFloat();
+                printInvoicePaid();
 	}
+        
 
+        public static void printInvoicePaid(){
+		double subtotal = 0.0;
+		for (int i = 0; i < goodsBought.size(); i++) {
+            	subtotal += goodsNo.get(i) * goodsPrice.get(i);
+        	}
+        
+		double vat = subtotal * 0.075;
+		double total = subtotal + vat;
+        
+		System.out.println("SEMICOLON STORE\nMAIN BRANCH\nLOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS");
+		System.out.println("TEL: 03293828343");
+		System.out.println("Date: " +currentDateAndTime);
+		System.out.println("Cashier Name: " +cashierName);
+		System.out.println("Customer Name: " +customerName);
+		System.out.println("==========================================");
+		System.out.println("ITEMS\t\t QTY\t PRICE\t TOTAL(NGN)");
+
+		System.out.println("----------------------------------------");
+		for (int i = 0; i < goodsBought.size(); i++) {
+    		double lineTotal = goodsNo.get(i) * goodsPrice.get(i);
+            	System.out.printf("%-15s %3d x   %6.2f %8.2f\n", goodsBought.get(i), goodsNo.get(i), goodsPrice.get(i), lineTotal);
+		}
+        
+        	System.out.println("-----------------------------------------");
+        	System.out.printf("%-20s %10.2f\n", "Subtotal:", subtotal);
+        	System.out.printf("%-20s %10.2f\n", "VAT (7.5%):", vat);
+
+		System.out.println("=========================================");
+        	System.out.printf("%-20s %10.2f\n", "Bill Total:", total);
+        	System.out.printf("%-20s %10.2f\n", "Amount paid:", amountPaid);
+        	System.out.printf("%-20s %10.2f\n", "Balance:", amountPaid - total);
+		System.out.println("=========================================");
+		System.out.println("THANK YOU FOR YOUR PATRONAGE");
+		System.out.println("-----------------------------------------");
+                
 }
