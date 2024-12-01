@@ -4,11 +4,13 @@ import java.util.Date;
 
 public class CheckOutSystem {
 
-	private static Scanner input = new Scanner(System.in);
-	private static ArrayList<String> goodsBought = new ArrayList<>();
-	private static ArrayList<Integer> goodsNo = new ArrayList<>();
-	private static ArrayList<Double> goodsPrice = new ArrayList<>();
-	private static Date currentDateAndTime = new Date();
+	static Scanner input = new Scanner(System.in);
+	static ArrayList<String> goodsBought = new ArrayList<>();
+	static ArrayList<Integer> goodsNo = new ArrayList<>();
+	static ArrayList<Double> goodsPrice = new ArrayList<>();
+	static Date currentDateAndTime = new Date();
+	static String cashierName;
+	static String customerName;
 	
 
 	public static void main(String[] args) {
@@ -16,7 +18,10 @@ public class CheckOutSystem {
 	
 
 	System.out.print("Please enter your name? ");
-	String customerName = input.nextLine();
+	cashierName = input.nextLine();
+
+	System.out.print("Please enter the customer name? ");
+	customerName = input.nextLine();
 	displayQuestions();
 
 	
@@ -57,9 +62,11 @@ public class CheckOutSystem {
 		double vat = subtotal * 0.075;
 		double total = subtotal + vat;
         
-		System.out.println("SEMICOLON STORE\nMAIN BRANCH\n LOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS");
+		System.out.println("SEMICOLON STORE\nMAIN BRANCH\nLOCATION: 312, HERBERT MACAULAY WAY, SABO YABA, LAGOS");
 		System.out.println("TEL: 03293828343");
-		System.out.println("Date" +currentDateAndTime);
+		System.out.println("Date: " +currentDateAndTime);
+		System.out.println("Cashier Name: " +cashierName);
+		System.out.println("Customer Name: " +customerName);
 		System.out.println("INVOICE");
 
 		System.out.println("----------------------------------------");
