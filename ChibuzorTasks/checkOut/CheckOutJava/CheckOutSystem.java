@@ -11,7 +11,7 @@ public class CheckOutSystem {
 	static Date currentDateAndTime = new Date();
 	static String cashierName;
 	static String customerName;
-        static double amountpaid = 0.0;
+        static double amountPaid = 0.0;
 	
 
 	public static void main(String[] args) {
@@ -83,8 +83,8 @@ public class CheckOutSystem {
         	System.out.printf("%-20s %10.2f\n", "Total:", total);
 
 		System.out.println("-----------------------------------------");
-                System.out.print("How much did the customer give you");
-                amountpaid = input.nextFloat();
+                System.out.print("How much did the customer give you: ");
+                amountPaid = input.nextFloat();
                 printInvoicePaid();
 	}
         
@@ -123,5 +123,7 @@ public class CheckOutSystem {
 		System.out.println("=========================================");
 		System.out.println("THANK YOU FOR YOUR PATRONAGE");
 		System.out.println("-----------------------------------------");
+
+      }
                 
 }
