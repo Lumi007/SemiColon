@@ -40,7 +40,6 @@ public class MenstrualCycleTracker {
             if (day > daysInMonths[month - 1]) {
                 day = 1;
                 month++;
-                
 
                 if (month > 12) {
                     month = 1;
@@ -81,8 +80,7 @@ public class MenstrualCycleTracker {
         System.out.println("\n--- Period Flow Dates (5 days) ---");
         int currentDay = day, currentMonth = month, currentYear = year;
         for (int i = 0; i < 5; i++) {
-            System.out.printf("Day %d: %02d-%02d-%d\n", 
-                (i + 1), currentDay, currentMonth, currentYear);
+            System.out.printf("Day %d: %02d-%02d-%d\n", (i + 1), currentDay, currentMonth, currentYear);
             
          
             int[] nextDate = addDays(currentDay, currentMonth, currentYear, 1);
